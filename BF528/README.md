@@ -12,7 +12,7 @@ Activate the base environment using the following command:
 conda activate ATACseq
 ```
 
-To run this pipeline on an SGE computer cluster, the following command can be used:
+To run this pipeline on an SGE computer cluster, the following command can then be used:
 ```
 snakemake -s atacseq.smk --sdm conda --executor cluster-generic --cluster-generic-submit-cmd "qsub -P bf528 -pe omp {threads}" --jobs 8
 ```
